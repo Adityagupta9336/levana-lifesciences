@@ -1,0 +1,20 @@
+# Environment variables & secrets
+.env
+.env.*
+*.env
+*.env.local
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.tgz
+*.rar
+*.7z
+
+# OS and temporary files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
