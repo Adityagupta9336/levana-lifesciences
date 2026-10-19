@@ -1,9 +1,14 @@
 import base64
 from pathlib import Path
+import shutil
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT.parent / "medical-store"
 OUT.mkdir(parents=True, exist_ok=True)
+
+PDF_NAME = "Levana-Lifesciences-GST.pdf"
+if (ROOT / PDF_NAME).exists():
+    shutil.copy(ROOT / PDF_NAME, OUT / PDF_NAME)
 
 css = (ROOT / "styles.css").read_text()
 js = (ROOT / "app.js").read_text()
@@ -23,6 +28,7 @@ IMG_DESK = img_uri("desk.jpg")
 # FIX-MEDIA: real brand logo and monogram supplied by the client
 IMG_LOGO = img_uri("logo.jpg")
 IMG_MARK = img_uri("mark.png")
+IMG_GST = img_uri("gst_preview.jpg")
 
 # FIX-MEDIA: clean percent encoded inline SVG placeholder used by img onerror fallback
 IMG_FALLBACK = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23eef3ef%22%2F%3E%3Crect%20x%3D%2222%22%20y%3D%2222%22%20width%3D%22756%22%20height%3D%22556%22%20rx%3D%2226%22%20fill%3D%22none%22%20stroke%3D%22%230e5c4a%22%20stroke-width%3D%225%22%20stroke-dasharray%3D%2218%2013%22%2F%3E%3Ccircle%20cx%3D%22300%22%20cy%3D%22252%22%20r%3D%2248%22%20fill%3D%22%23c46a3b%22%20opacity%3D%220.55%22%2F%3E%3Cpath%20d%3D%22M190%20440l130-140%2096%20106%2072-72%20132%20142H190z%22%20fill%3D%22%230e5c4a%22%20opacity%3D%220.35%22%2F%3E%3C%2Fsvg%3E'
@@ -87,7 +93,7 @@ __BODY__
 <span class="brand__name">Levana</span>
 <span class="brand__sub">Life Sciences</span>
 <p>Your trusted licensed medical store in Meerut, Uttar Pradesh. Genuine medicines, pharmacist-verified orders and friendly service, online and in-store.</p>
-<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09ABCDE1234F1Z5<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UP-PC-45219</div>
+<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09AANFL0727C1ZG (Form GST REG-06)<br><strong>Registered Entity</strong> Levana Lifesciences (Partnership)<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UP-PC-45219</div>
 </div>
 <div>
 <h4>Explore</h4>
@@ -95,6 +101,7 @@ __BODY__
 <li><a href="medicines.html">All medicines</a></li>
 <li><a href="prescriptions.html">Upload prescription</a></li>
 <li><a href="about.html">About and compliance</a></li>
+<li><a href="about.html#trust-doc">Seller GST verification</a></li>
 <li><a href="contact.html">Contact us</a></li>
 </ul>
 </div>
@@ -262,12 +269,14 @@ BODY_HOME = """
 <span class="label">Trust and compliance</span>
 <h2 id="trust-title">Licensed, verified and <em>transparent.</em></h2>
 <p>We display our credentials openly, the same way we display our prices. Original documents are available at our store for anyone who wishes to verify them in person.</p>
-<a class="link-arrow" href="about.html">Read about our compliance <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="link-arrow" href="about.html#trust-doc">View verified seller certificate <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 <dl class="spec-rows">
 <div class="spec-row"><dt>Drug licence</dt><dd>Forms 20B and 21B, Uttar Pradesh</dd></div>
 <div class="spec-row"><dt>Pharmacist</dt><dd>Mr. Amit Sharma, B.Pharm</dd></div>
-<div class="spec-row"><dt>GSTIN</dt><dd>09ABCDE1234F1Z5</dd></div>
+<div class="spec-row"><dt>GSTIN</dt><dd>09AANFL0727C1ZG (Form GST REG-06)</dd></div>
+<div class="spec-row"><dt>Seller entity</dt><dd>Levana Lifesciences (Partnership)</dd></div>
+<div class="spec-row"><dt>Registered office</dt><dd>275, Pathwalia, Civil line, Gonda, UP</dd></div>
 <div class="spec-row"><dt>Records</dt><dd>Retained securely for 3+ years</dd></div>
 <div class="spec-row"><dt>Privacy</dt><dd>Aligned with the DPDP Act</dd></div>
 </dl>
@@ -459,9 +468,57 @@ BODY_ABOUT = """
 <div class="cred-card reveal">
 <div class="cred-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div>
 <h3>GST registration</h3>
-<p>Every order comes with a proper GST tax invoice with HSN codes. There are no hidden charges.</p>
-<span class="value">GSTIN<br>09ABCDE1234F1Z5</span>
-<button class="btn btn--ghost btn--sm js-demo-doc" type="button">View certificate</button>
+<p>Government of India registration under Form GST REG-06. Every order is backed by a valid GST invoice with HSN codes.</p>
+<span class="value">GSTIN: 09AANFL0727C1ZG<br>Reg: 02/04/2026</span>
+<a class="btn btn--ghost btn--sm" href="Levana-Lifesciences-GST.pdf" target="_blank" rel="noopener">View certificate (PDF)</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section section--flush" id="trust-doc" aria-labelledby="trust-doc-title">
+<div class="container">
+<div class="sec-head">
+<div>
+<span class="label">Trust documents & seller verification</span>
+<h2 id="trust-doc-title">Verified seller details: <em>Levana Lifesciences.</em></h2>
+</div>
+<div class="sec-head__side"><p>Statutory seller registration under Form GST REG-06, Goods and Services Tax Network, Government of India. Complete transparency for every patient and order.</p></div>
+</div>
+<div class="trust-doc-card">
+<div class="trust-doc-card__body">
+<div class="trust-doc-badge">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+<span>Government of India &bull; Form GST REG-06 Verified</span>
+</div>
+<h3 class="trust-doc-card__title">Levana Lifesciences</h3>
+<p class="trust-doc-card__sub">Registered Partnership Firm &bull; Registration Certificate (Form GST REG-06)</p>
+<dl class="spec-rows trust-specs">
+<div class="spec-row"><dt>Legal name</dt><dd>LEVANA LIFESCIENCES</dd></div>
+<div class="spec-row"><dt>Trade name</dt><dd>LEVANA LIFESCIENCES</dd></div>
+<div class="spec-row"><dt>GSTIN</dt><dd><strong>09AANFL0727C1ZG</strong></dd></div>
+<div class="spec-row"><dt>Constitution of business</dt><dd>Partnership</dd></div>
+<div class="spec-row"><dt>Authorized partners</dt><dd>Mr. Babbu Upadhyay &bull; Ms. Phool Kumari Pandey</dd></div>
+<div class="spec-row"><dt>Principal place of business</dt><dd>Building No. 275, Pathwalia, Civil line, Gonda, Uttar Pradesh – 271001</dd></div>
+<div class="spec-row"><dt>Dispensing pharmacy / store</dt><dd>Unit No. S-002 (LIG), 2nd Floor, C-Block, Apex City Colony, Rampur Pawati, Meerut, UP</dd></div>
+<div class="spec-row"><dt>Registration type & date</dt><dd>Regular &bull; 02 April 2026</dd></div>
+<div class="spec-row"><dt>Approving authority</dt><dd>Assistant Commissioner, Commercial Tax, Gonda Sector-4, UP</dd></div>
+</dl>
+<div class="trust-doc-actions">
+<a class="btn btn--primary" href="Levana-Lifesciences-GST.pdf" target="_blank" rel="noopener">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M14 2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V7z"/><path d="M14 2v5h5M9 13h6M9 17h6"/></svg>
+View official GST certificate (PDF)
+</a>
+<a class="btn btn--ghost" href="https://services.gst.gov.in/services/searchtp" target="_blank" rel="noopener">Verify on GST portal &rarr;</a>
+</div>
+</div>
+<div class="trust-doc-card__media">
+<a href="Levana-Lifesciences-GST.pdf" target="_blank" rel="noopener" class="cert-preview-link" title="Click to view full official GST Registration Certificate">
+<img src="__IMG_GST__" alt="Official Government of India Form GST REG-06 Registration Certificate for Levana Lifesciences" width="600" height="850" loading="lazy" onerror="this.onerror=null;this.src='__IMG_FALLBACK__'">
+<span class="cert-preview-overlay">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+View full certificate (3 pages)
+</span>
+</a>
 </div>
 </div>
 </div>
@@ -607,6 +664,7 @@ for filename, title, desc, active, body in PAGES:
         .replace("__IMG_DESK__", IMG_DESK)
         .replace("__IMG_LOGO__", IMG_LOGO)
         .replace("__IMG_MARK__", IMG_MARK)
+        .replace("__IMG_GST__", IMG_GST)
         .replace("__IMG_FALLBACK__", IMG_FALLBACK)
         .replace("__CSS__", css)
         .replace("__JS__", js)

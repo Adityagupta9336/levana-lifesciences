@@ -1580,7 +1580,81 @@ h4 {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--ink);
-  line-height: 1.65;
+.trust-doc-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: clamp(1.85rem, 4vw, 3rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-m);
+  padding: clamp(1.65rem, 3.5vw, 2.5rem);
+  align-items: start;
+}
+
+.trust-doc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--r-s);
+  background: #e3efe9;
+  color: var(--brand);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.95rem;
+}
+
+.trust-doc-card__title {
+  font-size: 1.55rem;
+}
+
+.trust-doc-card__sub {
+  margin: 0.35rem 0 1.35rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.trust-doc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.cert-preview-link {
+  position: relative;
+  display: block;
+  border-radius: var(--r-m);
+  overflow: hidden;
+  border: 1.5px solid var(--line-strong);
+  background: var(--paper);
+  box-shadow: var(--shadow-float);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.cert-preview-link:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand);
+  text-decoration: none;
+}
+
+.cert-preview-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cert-preview-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--brand-deep);
+  color: var(--paper);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .prose h2 {
@@ -2264,7 +2338,9 @@ h4 {
 .rx-layout > *,
 .header-inner > *,
 .product-card__body,
-.cart-item__info {
+.cart-item__info,
+.trust-doc-card,
+.trust-doc-card > * {
   min-width: 0;
 }
 
@@ -2341,7 +2417,8 @@ h4 {
   .hero__inner,
   .split,
   .rx-layout,
-  .contact-grid {
+  .contact-grid,
+  .trust-doc-card {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -2504,6 +2581,11 @@ h4 {
   .sec-head {
     grid-template-columns: minmax(0, 1fr);
   }
+
+  .trust-doc-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 </style>
 </head>
@@ -2612,7 +2694,7 @@ h4 {
 <span class="brand__name">Levana</span>
 <span class="brand__sub">Life Sciences</span>
 <p>Your trusted licensed medical store in Meerut, Uttar Pradesh. Genuine medicines, pharmacist-verified orders and friendly service, online and in-store.</p>
-<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09ABCDE1234F1Z5<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UP-PC-45219</div>
+<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09AANFL0727C1ZG (Form GST REG-06)<br><strong>Registered Entity</strong> Levana Lifesciences (Partnership)<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UP-PC-45219</div>
 </div>
 <div>
 <h4>Explore</h4>
@@ -2620,6 +2702,7 @@ h4 {
 <li><a href="medicines.html">All medicines</a></li>
 <li><a href="prescriptions.html">Upload prescription</a></li>
 <li><a href="about.html">About and compliance</a></li>
+<li><a href="about.html#trust-doc">Seller GST verification</a></li>
 <li><a href="contact.html">Contact us</a></li>
 </ul>
 </div>

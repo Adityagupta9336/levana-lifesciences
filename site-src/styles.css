@@ -1565,7 +1565,81 @@ h4 {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--ink);
-  line-height: 1.65;
+.trust-doc-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: clamp(1.85rem, 4vw, 3rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-m);
+  padding: clamp(1.65rem, 3.5vw, 2.5rem);
+  align-items: start;
+}
+
+.trust-doc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--r-s);
+  background: #e3efe9;
+  color: var(--brand);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.95rem;
+}
+
+.trust-doc-card__title {
+  font-size: 1.55rem;
+}
+
+.trust-doc-card__sub {
+  margin: 0.35rem 0 1.35rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.trust-doc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.cert-preview-link {
+  position: relative;
+  display: block;
+  border-radius: var(--r-m);
+  overflow: hidden;
+  border: 1.5px solid var(--line-strong);
+  background: var(--paper);
+  box-shadow: var(--shadow-float);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.cert-preview-link:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand);
+  text-decoration: none;
+}
+
+.cert-preview-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cert-preview-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--brand-deep);
+  color: var(--paper);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .prose h2 {
@@ -2249,7 +2323,9 @@ h4 {
 .rx-layout > *,
 .header-inner > *,
 .product-card__body,
-.cart-item__info {
+.cart-item__info,
+.trust-doc-card,
+.trust-doc-card > * {
   min-width: 0;
 }
 
@@ -2326,7 +2402,8 @@ h4 {
   .hero__inner,
   .split,
   .rx-layout,
-  .contact-grid {
+  .contact-grid,
+  .trust-doc-card {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -2488,5 +2565,10 @@ h4 {
 
   .sec-head {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .trust-doc-actions {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
