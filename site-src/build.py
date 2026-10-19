@@ -93,7 +93,7 @@ __BODY__
 <span class="brand__name">Levana</span>
 <span class="brand__sub">Life Sciences</span>
 <p>Your trusted licensed medical store in Meerut, Uttar Pradesh. Genuine medicines, pharmacist-verified orders and friendly service, online and in-store.</p>
-<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09AANFL0727C1ZG (Form GST REG-06)<br><strong>Registered Entity</strong> Levana Lifesciences (Partnership)<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UP-PC-45219</div>
+<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09AANFL0727C1ZG (Form GST REG-06)<br><strong>Registered Entity</strong> Levana Lifesciences (Partnership)<br><strong>Pharmacist / Partner</strong> Mr. Babbu Upadhyay, B.Pharm</div>
 </div>
 <div>
 <h4>Explore</h4>
@@ -195,7 +195,7 @@ BODY_HOME = """
 <span class="hero-panel__badge" aria-hidden="true"><img src="__IMG_MARK__" alt="" width="96" height="96" onerror="this.onerror=null;this.src='__IMG_FALLBACK__'"></span>
 <div class="status-card">
 <span class="status-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M7.5 12.5l3 3 6-6.5"/><circle cx="12" cy="12" r="10"/></svg></span>
-<div><strong>Prescription verified</strong><span>By A. Sharma, B.Pharm</span></div>
+<div><strong>Prescription verified</strong><span>By B. Upadhyay, B.Pharm</span></div>
 </div>
 <div class="status-card status-card--right">
 <span class="status-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M1 16V6a2 2 0 012-2h11v12H1zM14 9h4l4 4v3h-8V9z"/><circle cx="6.5" cy="18" r="2.2"/><circle cx="17.5" cy="18" r="2.2"/></svg></span>
@@ -273,7 +273,7 @@ BODY_HOME = """
 </div>
 <dl class="spec-rows">
 <div class="spec-row"><dt>Drug licence</dt><dd>Forms 20B and 21B, Uttar Pradesh</dd></div>
-<div class="spec-row"><dt>Pharmacist</dt><dd>Mr. Amit Sharma, B.Pharm</dd></div>
+<div class="spec-row"><dt>Pharmacist / Partner</dt><dd>Mr. Babbu Upadhyay, B.Pharm</dd></div>
 <div class="spec-row"><dt>GSTIN</dt><dd>09AANFL0727C1ZG (Form GST REG-06)</dd></div>
 <div class="spec-row"><dt>Seller entity</dt><dd>Levana Lifesciences (Partnership)</dd></div>
 <div class="spec-row"><dt>Registered office</dt><dd>275, Pathwalia, Civil line, Gonda, UP</dd></div>
@@ -462,7 +462,7 @@ BODY_ABOUT = """
 <div class="cred-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0114 0v1"/></svg></div>
 <h3>Registered pharmacist</h3>
 <p>A qualified, registered pharmacist is present during all working hours and verifies every prescription order.</p>
-<span class="value">Mr. Amit Sharma, B.Pharm<br>UP-PC-45219</span>
+<span class="value">Mr. Babbu Upadhyay, B.Pharm<br>Authorized Partner & Pharmacist</span>
 <button class="btn btn--ghost btn--sm js-demo-doc" type="button">View registration</button>
 </div>
 <div class="cred-card reveal">
