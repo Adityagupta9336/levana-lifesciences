@@ -483,13 +483,13 @@ BODY_ABOUT = """
 </ul>
 </div>
 <div>
-<div class="spec-rows">
+<dl class="spec-rows">
 <div class="spec-row"><dt>Prescription check</dt><dd>Before every Rx dispatch</dd></div>
 <div class="spec-row"><dt>Records retention</dt><dd>Minimum 3 years</dd></div>
 <div class="spec-row"><dt>Data storage</dt><dd>India, encrypted at rest</dd></div>
 <div class="spec-row"><dt>Price display</dt><dd>MRP shown on all products</dd></div>
 <div class="spec-row"><dt>Prohibited online</dt><dd>Schedule X and narcotics</dd></div>
-</div>
+</dl>
 <div class="map-card">
 <strong>Verify us in person</strong>
 <p>Visit our store at Apex City Colony, Rampur Pawati, Meerut with any question about our licence, pharmacist or documents. We are open daily from 8:00 AM to 11:00 PM.</p>

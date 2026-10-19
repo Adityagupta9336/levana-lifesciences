@@ -994,7 +994,6 @@ h4 {
 .step-item {
   padding: 2.15rem 1.85rem 2.15rem 0;
   border-right: 1px solid var(--line);
-  padding-right: 1.85rem;
   margin-right: 1.85rem;
 }
 
@@ -2486,6 +2485,8 @@ h4 {
   .status-card {
     max-width: 100%;
   }
+
+  .sec-head {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
-
-

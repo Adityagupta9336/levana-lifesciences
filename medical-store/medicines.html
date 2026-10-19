@@ -1009,7 +1009,6 @@ h4 {
 .step-item {
   padding: 2.15rem 1.85rem 2.15rem 0;
   border-right: 1px solid var(--line);
-  padding-right: 1.85rem;
   margin-right: 1.85rem;
 }
 
@@ -2501,9 +2500,11 @@ h4 {
   .status-card {
     max-width: 100%;
   }
+
+  .sec-head {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
-
-
 </style>
 </head>
 <body>
@@ -2823,7 +2824,7 @@ h4 {
         '<p class="product-card__company">' + p.company + "</p>" +
         '<h3 class="product-card__name">' + p.name + "</h3>" +
         '<p class="product-card__salt">' + p.salt + "</p>" +
-        '<p class="product-card__pack">' + p.pack + (p.rx ? ' · <span class="rx-mark">Prescription required</span>' : "") + "</p>" +
+        '<p class="product-card__pack">' + p.pack + (p.rx ? ' Â· <span class="rx-mark">Prescription required</span>' : "") + "</p>" +
         '<div class="product-card__foot">' +
           '<p class="price"><strong>' + fmt(p.price) + "</strong>" + (p.mrp > p.price ? "<s>" + fmt(p.mrp) + "</s>" : "") + "</p>" +
           '<button class="btn-add js-add" data-id="' + p.id + '"' + (inCart ? " disabled" : "") + ">" +
@@ -2918,7 +2919,7 @@ h4 {
           '<div class="cart-item__thumb">' + icon(p.icon) + "</div>" +
           '<div class="cart-item__info">' +
             '<p class="cart-item__name">' + p.name + "</p>" +
-            '<p class="cart-item__price">' + fmt(p.price) + (p.rx ? " · Prescription item" : "") + "</p>" +
+            '<p class="cart-item__price">' + fmt(p.price) + (p.rx ? " Â· Prescription item" : "") + "</p>" +
             '<div class="qty" role="group" aria-label="Quantity for ' + p.name + '">' +
               '<button class="js-qty" data-id="' + p.id + '" data-delta="-1" aria-label="Decrease quantity">-</button>' +
               "<span>" + c.qty + "</span>" +
