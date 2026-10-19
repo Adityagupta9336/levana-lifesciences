@@ -528,6 +528,45 @@
   renderCart();
   observeReveals();
 
+  var contactForm = $("#contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+      var origText = submitBtn ? submitBtn.textContent : "Send message";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+      }
+
+      var formData = new FormData(contactForm);
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        if (data.success) {
+          alert("Message sent successfully!");
+          contactForm.reset();
+        } else {
+          alert(data.message || "Something went wrong. Please try again.");
+        }
+      })
+      .catch(function (error) {
+        alert("Something went wrong. Please check your connection and try again.");
+      })
+      .finally(function () {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = origText;
+        }
+      });
+    });
+  }
+
   var yearEl = $("#year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();

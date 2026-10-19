@@ -60,7 +60,7 @@ __CSS__</style>
 <span>Licensed pharmacy (20B / 21B) in Meerut, Uttar Pradesh</span>
 <div class="announce__right">
 <span>Same-day delivery in Meerut</span>
-<a href="tel:+919876543210">Helpline +91 98765 43210</a>
+<a href="tel:+919565796439">Helpline +91 95657 96439</a>
 </div>
 </div>
 </div>
@@ -93,7 +93,7 @@ __BODY__
 <span class="brand__name">Levana</span>
 <span class="brand__sub">Life Sciences</span>
 <p>Your trusted licensed medical store in Meerut, Uttar Pradesh. Genuine medicines, pharmacist-verified orders and friendly service, online and in-store.</p>
-<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09AANFL0727C1ZG (Form GST REG-06)<br><strong>Registered Entity</strong> Levana Lifesciences (Partnership)<br><strong>Pharmacist / Partner</strong> Mr. Babbu Upadhyay, B.Pharm</div>
+<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09AANFL0727C1ZG (Form GST REG-06)<br><strong>Registered Entity</strong> Levana Lifesciences (Partnership)</div>
 </div>
 <div>
 <h4>Explore</h4>
@@ -119,8 +119,8 @@ __BODY__
 <h4>Visit us</h4>
 <ul class="footer-contact">
 <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Unit No. S-002 (LIG), Second Floor, C-Block, Apex City Colony, Village Rampur Pawati, Tehsil and District Meerut, Uttar Pradesh</span></li>
-<li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg><span><a href="tel:+919876543210">+91 98765 43210</a></span></li>
-<li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg><span><a href="mailto:levanalifesciences26@gmail.com">levanalifesciences26@gmail.com</a></span></li>
+<li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg><span><a href="tel:+919565796439">+91 95657 96439</a></span></li>
+<li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg><span><a href="mailto:hp4961535@gmail.com">hp4961535@gmail.com</a></span></li>
 <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span>Open daily, 8:00 AM to 11:00 PM</span></li>
 </ul>
 </div>
@@ -195,7 +195,7 @@ BODY_HOME = """
 <span class="hero-panel__badge" aria-hidden="true"><img src="__IMG_MARK__" alt="" width="96" height="96" onerror="this.onerror=null;this.src='__IMG_FALLBACK__'"></span>
 <div class="status-card">
 <span class="status-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M7.5 12.5l3 3 6-6.5"/><circle cx="12" cy="12" r="10"/></svg></span>
-<div><strong>Prescription verified</strong><span>By B. Upadhyay, B.Pharm</span></div>
+<div><strong>Prescription verified</strong><span>Verified</span></div>
 </div>
 <div class="status-card status-card--right">
 <span class="status-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M1 16V6a2 2 0 012-2h11v12H1zM14 9h4l4 4v3h-8V9z"/><circle cx="6.5" cy="18" r="2.2"/><circle cx="17.5" cy="18" r="2.2"/></svg></span>
@@ -243,7 +243,7 @@ BODY_HOME = """
 </div>
 </div>
 <div class="product-grid" id="product-grid" data-limit="6"></div>
-<div class="empty-state" id="empty-state" hidden><strong>No medicines found</strong><p>Call us at <a href="tel:+919876543210">+91 98765 43210</a> and we will arrange it for you.</p></div>
+<div class="empty-state" id="empty-state" hidden><strong>No medicines found</strong><p>Call us at <a href="tel:+919565796439">+91 95657 96439</a> and we will arrange it for you.</p></div>
 </div>
 </section>
 <section class="section section--flush" aria-labelledby="how-title">
@@ -273,7 +273,7 @@ BODY_HOME = """
 </div>
 <dl class="spec-rows">
 <div class="spec-row"><dt>Drug licence</dt><dd>Forms 20B and 21B, Uttar Pradesh</dd></div>
-<div class="spec-row"><dt>Pharmacist / Partner</dt><dd>Mr. Babbu Upadhyay, B.Pharm</dd></div>
+<div class="spec-row"><dt>Pharmacist</dt><dd>Verified</dd></div>
 <div class="spec-row"><dt>GSTIN</dt><dd>09AANFL0727C1ZG (Form GST REG-06)</dd></div>
 <div class="spec-row"><dt>Seller entity</dt><dd>Levana Lifesciences (Partnership)</dd></div>
 <div class="spec-row"><dt>Registered office</dt><dd>275, Pathwalia, Civil line, Gonda, UP</dd></div>
@@ -304,8 +304,8 @@ BODY_HOME = """
 <p>Talk to our pharmacist. We will help you find the right product and confirm your prescription without any confusion.</p>
 </div>
 <div class="cta-band__actions">
-<a class="btn btn--light" href="tel:+919876543210">Call now</a>
-<a class="btn btn--outline-light" href="https://wa.me/919876543210" target="_blank" rel="noopener">Chat on WhatsApp</a>
+<a class="btn btn--light" href="tel:+919565796439">Call now</a>
+<a class="btn btn--outline-light" href="https://wa.me/919565796439" target="_blank" rel="noopener">Chat on WhatsApp</a>
 </div>
 </div>
 </section>
@@ -339,7 +339,7 @@ BODY_MEDICINES = """
 </div>
 <p class="result-line" id="result-count" aria-live="polite"></p>
 <div class="product-grid" id="product-grid"></div>
-<div class="empty-state" id="empty-state" hidden><strong>No medicines found</strong><p>Try a different search or category, or call us at <a href="tel:+919876543210">+91 98765 43210</a>.</p></div>
+<div class="empty-state" id="empty-state" hidden><strong>No medicines found</strong><p>Try a different search or category, or call us at <a href="tel:+919565796439">+91 95657 96439</a>.</p></div>
 <div class="info-strip">
 <div class="info-strip__item"><strong>Prescription items</strong><p>Products marked &#34;Prescription required&#34; are dispatched only after our pharmacist verifies your prescription.</p></div>
 <div class="info-strip__item"><strong>Fast local delivery</strong><p>Same-day delivery across Meerut in 30 to 60 minutes. Free delivery on orders above 499 rupees.</p></div>
@@ -395,7 +395,7 @@ BODY_PRESCRIPTIONS = """
 <div class="faq">
 <details open><summary>Which medicines need a prescription?</summary><div class="faq__body">Products marked &#34;Prescription required&#34; on our website need a valid prescription from a registered doctor. These include Schedule H and H1 medicines such as antibiotics. Everyday OTC products, vitamins, ayurveda and devices do not need one.</div></details>
 <details><summary>How long does verification take?</summary><div class="faq__body">Usually within 30 minutes during store hours (8:00 AM to 11:00 PM). After verification we confirm your order on call or WhatsApp, and then it is packed and dispatched.</div></details>
-<details><summary>Can I send my prescription on WhatsApp instead?</summary><div class="faq__body">Yes. Send a clear photo to +91 98765 43210 along with your name and delivery address, and our pharmacist will take care of the rest.</div></details>
+<details><summary>Can I send my prescription on WhatsApp instead?</summary><div class="faq__body">Yes. Send a clear photo to +91 95657 96439 along with your name and delivery address, and our pharmacist will take care of the rest.</div></details>
 </div>
 </div>
 </section>
@@ -406,7 +406,7 @@ BODY_PRESCRIPTIONS = """
 <p>Our pharmacist is available daily from 8:00 AM to 11:00 PM to help you.</p>
 </div>
 <div class="cta-band__actions">
-<a class="btn btn--light" href="tel:+919876543210">Call now</a>
+<a class="btn btn--light" href="tel:+919565796439">Call now</a>
 <a class="btn btn--outline-light" href="contact.html">Contact us</a>
 </div>
 </div>
@@ -457,13 +457,6 @@ BODY_ABOUT = """
 <p>Retail sale of drugs under Forms 20B and 21B, issued by the Uttar Pradesh State Drugs Control Department.</p>
 <span class="value">20B / 21B<br>UP/20B-21B/2026/1876</span>
 <button class="btn btn--ghost btn--sm js-demo-doc" type="button">View certificate</button>
-</div>
-<div class="cred-card reveal">
-<div class="cred-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0114 0v1"/></svg></div>
-<h3>Registered pharmacist</h3>
-<p>A qualified, registered pharmacist is present during all working hours and verifies every prescription order.</p>
-<span class="value">Mr. Babbu Upadhyay, B.Pharm<br>Authorized Partner & Pharmacist</span>
-<button class="btn btn--ghost btn--sm js-demo-doc" type="button">View registration</button>
 </div>
 <div class="cred-card reveal">
 <div class="cred-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div>
@@ -562,7 +555,7 @@ View full certificate (3 pages)
 <p>Call our pharmacist and we will help you with any verification, including licence and registration details.</p>
 </div>
 <div class="cta-band__actions">
-<a class="btn btn--light" href="tel:+919876543210">Call now</a>
+<a class="btn btn--light" href="tel:+919565796439">Call now</a>
 <a class="btn btn--outline-light" href="contact.html">Contact us</a>
 </div>
 </div>
@@ -580,25 +573,34 @@ BODY_CONTACT = """
 <section class="section" aria-label="Contact options">
 <div class="container contact-grid">
 <div class="contact-cards">
-<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></span><div><strong>Call our helpline</strong><p><a href="tel:+919876543210">+91 98765 43210</a></p></div></div>
-<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 11.5a8.4 8.4 0 01-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1121 11.5z"/></svg></span><div><strong>WhatsApp</strong><p><a href="https://wa.me/919876543210" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p></div></div>
-<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg></span><div><strong>Email</strong><p><a href="mailto:levanalifesciences26@gmail.com">levanalifesciences26@gmail.com</a></p></div></div>
+<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></span><div><strong>Call our helpline</strong><p><a href="tel:+919565796439">+91 95657 96439</a></p></div></div>
+<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M21 11.5a8.4 8.4 0 01-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1121 11.5z"/></svg></span><div><strong>WhatsApp</strong><p><a href="https://wa.me/919565796439" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p></div></div>
+<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg></span><div><strong>Email</strong><p><a href="mailto:hp4961535@gmail.com">hp4961535@gmail.com</a></p></div></div>
 <div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span><div><strong>Store hours</strong><p>Open daily, 8:00 AM to 11:00 PM</p></div></div>
 <div class="map-card">
 <strong>Visit our store</strong>
 <p>Unit No. S-002 (LIG), Second Floor, C-Block, Apex City Colony, Village Rampur Pawati, Tehsil and District Meerut, Uttar Pradesh.</p>
 <a href="https://maps.google.com/?q=Apex+City+Colony+Rampur+Pawati+Meerut" target="_blank" rel="noopener">Open in Google Maps</a>
 </div>
+<div class="team-section" style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee;">
+<h3 style="margin-bottom: 1rem;">Our Team</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="20" x2="20" y2="20"/><line x1="12" y1="20" x2="16" y2="20"/><line x1="8" y1="20" x2="12" y2="20"/><line x1="4" y1="20" x2="8" y2="20"/></svg></span><div><strong>Admin</strong><p><a href="mailto:2005adityag@gmail.com">2005adityag@gmail.com</a></p></div></div>
+<div class="contact-card reveal"><span class="contact-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></span><div><strong>Management</strong><p><a href="tel:+918219379566">+91 82193 79566</a></p></div></div>
+</div>
+</div>
 </div>
 <div class="form-box">
 <h2>Send us a message</h2>
 <p class="lead">We usually reply within a few hours during store hours.</p>
-<form class="form-grid" id="contact-form">
+<form class="form-grid" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="f1e64c88-093c-4fe0-acb6-495deb41978f">
+<input type="hidden" name="subject" value="New Contact Form Submission">
 <div class="field"><label for="cf-name">Your name</label><input id="cf-name" name="name" type="text" required autocomplete="name"></div>
 <div class="field"><label for="cf-phone">Phone number</label><input id="cf-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel"></div>
 <div class="field field--full"><label for="cf-email">Email (optional)</label><input id="cf-email" name="email" type="email" autocomplete="email"></div>
 <div class="field field--full"><label for="cf-msg">How can we help?</label><textarea id="cf-msg" name="message" required></textarea></div>
-<div class="field field--full"><button class="btn btn--primary btn--block js-demo-form" type="submit">Send message</button></div>
+<div class="field field--full"><button class="btn btn--primary btn--block" type="submit">Send message</button></div>
 </form>
 </div>
 </div>
