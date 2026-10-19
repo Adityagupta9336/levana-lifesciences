@@ -73,7 +73,11 @@ sub(
 )
 sub(
     '<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UK/20B-21B/2024/1876<br><strong>GSTIN</strong> 05ABCDE1234F1Z5<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UK-PC-45219</div>',
+    '<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09ABCDE1234F1Z5</div>',
+)
+sub(
     '<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09ABCDE1234F1Z5<br><strong>Pharmacist</strong> Mr. Amit Sharma, B.Pharm, UP-PC-45219</div>',
+    '<div class="footer-legal"><strong>Drug Licence</strong> 20B / 21B, UP/20B-21B/2026/1876<br><strong>GSTIN</strong> 09ABCDE1234F1Z5</div>',
 )
 sub("UK/20B-21B/2024/1876", "UP/20B-21B/2026/1876", 1)
 sub("UK-PC-45219", "UP-PC-45219", 1)
